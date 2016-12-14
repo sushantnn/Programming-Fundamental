@@ -2,28 +2,74 @@
 name=sushant nepal
 roll=42
 subject=programming fundamental
-program=write c c program to check whether the number is divisible by 5&11 or not
+program=write a menu based program to create a calculator using switch case
 */
 
 #include<stdio.h>;
 #include<conio.h>;
 int main(){
-int a;
-printf("Enter the number");
-scanf("%d",&a);
+    int a,n,c,b,sub,pro,div;
+printf("\t\t\t\t simple calculator\n");
+printf("choose any number\n");
+printf("1.Addition\n");
+printf("2.Subtraction\n");
+printf("3.Multiply\n");
+printf("4.Divide\n");
+printf("5.Exit\n");
 
-if (a%5==0 && as%11==0)
+printf("Choose any number:>>");
+scanf("%d",&n);
+
+switch(n)
 {
-printf("the number is divisible by 5&11");
+case 1:
+        printf("Enter first number:\n");
+        scanf("%d",&a);
+        printf("Enter second number:\n");
+        scanf("%d",&b);
+        c=a+b;
+        printf("Sum is:%d\n",c);
+
+        break;
+
+case 2:
+         printf("Enter first number");
+        scanf("%d",&a);
+        printf("Enter second number");
+        scanf("%d",&b);
+        sub=a-b;
+        printf("Sub is:%d\n",sub);
+
+        break;
+
+
+
+case 3:
+        printf("Enter first number");
+        scanf("%d",&a);
+        printf("Enter second number");
+        scanf("%d",&b);
+        pro=a*b;
+        printf("Pro is:%d\n",pro);
+
+        break;
+
+case 4:
+        printf("Enter first number");
+        scanf("%d",&a);
+        printf("Enter second number");
+        scanf("%d",b);
+        div=a%b;
+        printf("Div is:%d\n",div);
+
+        break;
+
+default:
+        printf("Thank You for visiting:");
 }
-else
-    {
-    printf("the number is not divisible by 5&11");
-    }
+
+
+
 getch();
 return(0);
-
-
-
-
 }
